@@ -6,7 +6,7 @@
 /*   By: zoesente <zoesente@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 10:10:13 by zoesente          #+#    #+#             */
-/*   Updated: 2022/12/06 17:29:54 by zoesente         ###   ########.fr       */
+/*   Updated: 2022/12/10 17:20:01 by zoesente         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void	ft_signnb(int *n, int *temp, int *sign)
 	}
 }
 
-static int	ft_longnb(int n)
+static int	ft_lgnb(int n)
 {
 	int	i;
 
@@ -68,7 +68,7 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	ft_signnb(&n, &temp, &sign);
-	digit_len = ft_longnb(n);
+	digit_len = ft_lgnb(n);
 	if (sign == -1)
 	{
 		digit_len++;
